@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,32 @@
     <link rel="stylesheet" href="./estilos.css">
     <title>Inicio</title>
 </head>
+
 <body>
 
 
-   
-<h1>
-    Bienvenidos
-</h1>
+    <div class="titulo">
+        <h1>
+            Casa de Cambio
+        </h1>
+    </div>
+
+    <div class="calculadora">
+        <form class="formulario">
+            <p>¿Quieres saber cuanto cotizan tus pesos?</p>
+            <input type="radio" name="cambio" id="uno"> Dolar
+            <input type="radio" name="cambio" id="dos"> Euro
+            <p>Ingrese el monto de tus pesos</p>
+            <input type="number" id="valor" min="1" max="1000000">
+            <input type="button" id="cotizador" value="Consultar" onclick="convertir()">
+        </form>
+    </div>
+    
 
 
 
-<script src="./index.js"></script>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
