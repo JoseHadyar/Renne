@@ -7,27 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
     <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-
-
-    <div class="titulo">
-        <h1>
-            Casa de Cambio
-        </h1>
-    </div>
-
-    <div class="calculadora">
-        <form class="formulario">
-            <p>¿Quieres saber cuanto cotizan tus pesos?</p>
-            <input type="radio" name="cambio" id="uno"> Dolar
-            <input type="radio" name="cambio" id="dos"> Euro
-            <p>Ingrese el monto de tus pesos</p>
-            <input type="number" id="valor" min="1" max="1000000">
-            <input type="button" id="cotizador" value="Consultar" onclick="convertir()">
+    <div class="container py-2">
+        <p class="lead">Ingrese usuarios</p>
+        <form action="">
+            <input id="nombre" type="text" placeholder="Ingrese nombre" class="form-control my-2">
+            <input id="edad" type="text" placeholder="Ingrese edad" class="form-control my-2" >
+            <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Agregar</button>
         </form>
     </div>
+
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            
+        </table>
+    </div>
+    
     
 
 
