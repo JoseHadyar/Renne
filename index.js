@@ -52,3 +52,32 @@ productos.forEach(producto => {
     
     ` 
 })
+
+
+//  Aca comienza el desafio de Eventos
+class User {
+    constructor(username, email, password){
+        this.username = username
+        this.email = email
+        this.password = password
+    }
+}
+
+const personas = []
+
+const form = document.getElementById('idForm')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    
+    let username = document.getElementById('idUser').value
+    let email = document.getElementById('idEmail').value
+    let password = document.getElementById('idPassword').value
+
+    const user = new User(username, email, password)
+    personas.push(user)
+    console.log(personas)
+
+    form.reset()
+})
+
