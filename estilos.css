@@ -1,12 +1,10 @@
 * {
-    margin: 0;
+     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
-    
-    /* background-image: url(./imagenes/thumb-1920-542730.png); */
     background-image: linear-gradient(90deg,
             #6275fe 0,
             #816ef6 12.5%,
@@ -17,18 +15,72 @@ body {
             #d843bf 75%,
             #e23ab1 87.5%,
             #ea32a3 100%);
+}
+
+h1{
     text-align: center;
-    align-items: center;
-    width: 100vh;
-    height: 100%;
-    padding: 5rem;
+    padding-top: 2rem;
+}
+
+#store-container{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.item {
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.432);
 }
 
 
-.productos{
-    background-color: rgb(217, 255, 0);
-    margin: 1rem;
-    color: rgb(0, 0, 0);
-    border-radius: 1rem;
+
+#shopping-cart-container{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    top: 0;
+    width: 300px;
+    border: solid 1px rgb(255, 255, 255);
     padding: 1rem;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+.item .title{
+    font-weight: bold;
+}
+
+.item .precio{
+    color: green;
+    font-weight: bold;
+}
+
+.item div{
+    padding: 5px 0;
+}
+
+.total{
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    background-color: rgb(241, 217, 28);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
