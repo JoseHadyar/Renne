@@ -1,0 +1,16 @@
+[
+    {
+        "nombre":"Anillo Anessa",
+        "precio":500,
+        "stock":3,
+        "img":"anillo-anessa.jpeg"
+    },
+
+    {
+        "nombre":"Argollas Channy",
+        "precio":750,
+        "stock":5,
+        "img":"argollas-channy.jpg"
+    }
+
+]
